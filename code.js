@@ -18,7 +18,7 @@ bigButton.addEventListener('click', e => {
   const box = document.createElement('div');
   box.setAttribute('class', 'box');
   document.querySelector('main').appendChild(box);
-  box.setAttribute('style', `left: ${myX}px; top: ${myY}px`);
+  box.setAttribute('style',`left: ${myX}px; top: ${myY}px; background-position: -${myX}px -${myY}px;`);
 
   const boxes = document.querySelectorAll('.box');
   console.log(boxes);
